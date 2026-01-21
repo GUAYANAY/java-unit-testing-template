@@ -14,4 +14,11 @@ class PropinaTest {
     assertThrows(IllegalArgumentException.class,
         () -> Propina.totalConPropina(-1.0, 10.0));
   }
+
+@Test
+void totalConPropina_ceroPropina() {
+  ouble obtenido = Propina.totalConPropina(100.0, 0.0);
+    assertEquals(100.0, obtenido, 0.000001);
+    }
+
 }
